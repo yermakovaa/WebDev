@@ -1,4 +1,4 @@
-.page-header {
+.header {
   position: absolute;
   top: 0;
   right: 0;
@@ -7,7 +7,7 @@
   padding: 25px 0;
 }
 
-.page-header__container {
+.header__container {
   @extend %container;
 
   position: relative;

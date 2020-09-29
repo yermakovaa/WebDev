@@ -8,8 +8,9 @@
 @import "./utils/placeholders";
 
 // Оформление шапки страницы
-@import "./components/page-header";
+@import "./components/header";
 
-// Оформление героя
+// Оформление секций
 @import "./components/hero";
+@import "./components/service";
 
