@@ -11,10 +11,10 @@
   max-width: 1600px;
 
   text-align: center;
-  background-image: url('../img/bg-image.jpg');
+  background-image: url('../img/hero/bg-image.jpg');
 
   @media screen and (min-resolution: 2dppx) {
-    background-image: url('../img/bg-image@2x.jpg');
+    background-image: url('../img/hero/bg-image@2x.jpg');
   }
 }
 
