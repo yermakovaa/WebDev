@@ -21,14 +21,14 @@
           <a class="site-nav__item site-nav__item--active" href="./index.html"
             >About</a
           >
-          <a class="site-nav__item" href="">Syllabus</a>
+          <a class="site-nav__item" href="#">Syllabus</a>
           <a href="#" aria-label="logo company" class="logo">
             <svg width="44" height="45">
               <use href="./img/sprite.svg#icon-logo"></use>
             </svg>
           </a>
-          <a class="site-nav__item" href="">Projects</a>
-          <a class="site-nav__item" href="">FAQ</a>
+          <a class="site-nav__item" href="#">Projects</a>
+          <a class="site-nav__item" href="#">FAQ</a>
         </nav>
       </div>
     </header>
@@ -77,14 +77,33 @@
 
       <section class="rappresent">
         <div class="rappresent__container">
-          <h2 class="rappresent__title">Rappresent your idea with a smart Design</h2>
-          <p class="rappresent__text">
-            Tasks accompanying and related to programming include: testing,
-            debugging, source code maintenance, implementation of build systems,
-            and management of derived artifacts, such as the machine code of
-            computer programs.
-          </p>
-          <button class="rappresent__button">get started</button>
+          <div class="rappresent__container--flex">
+            <h2 class="rappresent__title">
+              Rappresent your idea with a smart Design
+            </h2>
+            <p class="rappresent__text">
+              Tasks accompanying and related to programming include: testing,
+              debugging, source code maintenance, <b class="rappresent__text--bold">implementation of build
+              systems</b>, and management of derived artifacts, such as the machine
+              code of computer programs.
+            </p>
+            <button class="rappresent__button">get started</button>
+          </div>
+          <picture>
+            <source
+              srcset="
+                ./img/rappresent/content-image-1.webp    1x,
+                ./img/rappresent/content-image-1@2x.webp 2x
+              "
+              type="image/webp"
+            />
+
+            <img
+              src="./img/rappresent/content-image-1.jpg"
+              alt="Content image"
+              srcset="./img/rappresent/content-image-1@2x.jpg 2x"
+            />
+          </picture>
         </div>
       </section>
 

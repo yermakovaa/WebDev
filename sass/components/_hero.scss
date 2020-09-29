@@ -53,5 +53,14 @@
     margin-right: 30px;
   }
 
+  transition: all $timing-function;
+
   color: $contrast-color;
+  fill: currentColor;
+  stroke: currentColor;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }

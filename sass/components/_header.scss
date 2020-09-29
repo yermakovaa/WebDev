@@ -9,9 +9,7 @@
 
 .header__container {
   @extend %container;
-
   position: relative;
-  overflow: hidden;
 }
 
 .site-nav {
@@ -59,7 +57,6 @@
 
 .site-nav__item--active {
   opacity: 1;
-  font-weight: 500;
   color: $contrast-color;
 
   &::after {
