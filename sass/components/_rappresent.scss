@@ -5,10 +5,9 @@
 
 .rappresent__container {
   @extend %container;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-
+  max-width: 1092px;
+  @extend %centeredFlex;
+  justify-content: space-between;
 }
 
 .rappresent__title {
