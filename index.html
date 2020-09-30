@@ -111,35 +111,84 @@
 
       <section class="our-community">
         <div class="our-community__container">
-          <img
-            src="./img/our-community/userpic.jpg"
-            alt="Our community"
-            width="45px"
-            height="45px"
-          />
-          <h2 class="our-community__title">our community</h2>
-          <p class="our-community__text">
-            A hacker is any skilled computer expert that uses their technical
-            knowledge to overcome a problem, but it can also mean a security
-            hacker in common language
-          </p>
+          <div class="our-community__container--flex">
+            <img
+              class="our-community__img"
+              src="./img/our-community/userpic.jpg"
+              alt="Our community"
+              width="45px"
+              height="45px"
+            />
+            <h2 class="our-community__title">our community</h2>
+            <p class="our-community__text">
+              A hacker is any skilled computer expert that uses their technical
+              knowledge to overcome a problem, but it can also mean a security
+              hacker in common language
+            </p>
+          </div>
+          <picture>
+            <source
+              srcset="
+                ./img/our-community/slider-item-1.webp    1x,
+                ./img/our-community/slider-item-1@2x.webp 2x
+              "
+              type="image/webp"
+            />
+
+            <img
+              src="./img/our-community/slider-item-1.jpg"
+              alt="Slider image"
+              srcset="./img/our-community/slider-item-1@2x.jpg 2x"
+            />
+          </picture>
         </div>
       </section>
 
       <section class="implement">
         <div class="implement__container">
-          <h2 class="implement__title">Implement right Code</h2>
-          <p class="implement__text">
-            These might be considered part of the programming process, but often
-            the term software development is used for this larger process with
-            the term programming, implementation
-          </p>
-          <button class="implement__button">Learn more</button>
+          <picture>
+            <source
+              srcset="
+                ./img/implement/content-image-2.webp    1x,
+                ./img/implement/content-image-2@2x.webp 2x
+              "
+              type="image/webp"
+            />
+
+            <img
+              src="./img/implement/content-image-2.jpg"
+              alt="Slider image"
+              srcset="./img/implement/content-image-2@2x.jpg 2x"
+            />
+          </picture>
+          <div class="implement__container--flex">
+            <h2 class="implement__title">Implement right Code</h2>
+            <p class="implement__text">
+              These might be considered part of the
+              <b class="implement__text--bold">programming process</b>, but
+              often the term software development is used for this larger
+              process with the term programming, implementation
+            </p>
+            <button class="implement__button">Learn more</button>
+          </div>
         </div>
       </section>
 
-      <section>
-        <div></div>
+      <section class="sing-up">
+        <div class="sing-up__container">
+          <h2 class="sing-up__title">sign up for our newsletter</h2>
+          <form class="form" autocomplete="off">
+            <div class="form__field">
+              <label for="mail"></label>
+              <input type="email" name="mail" id="mail" placeholder="E-mail" />
+            </div>
+            <button type="submit" class="form__button">
+              <svg class="form__icon" width="16" height="13">
+                <use href="./img/sprite.svg#icon-check"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </section>
     </main>
   </body>
