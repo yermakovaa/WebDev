@@ -31,32 +31,14 @@ ul {
   list-style: none;
 }
 
-.header__container, .hero__container, .rappresent__container {
+.header__container, .hero__container, .rappresent__container, .our-community__container, .implement__container, .sing-up__container {
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
 }
 
-@media screen and (max-width: 448px) {
-  .header__container, .hero__container, .rappresent__container {
-    width: 448px;
-  }
-}
-
-@media screen and (min-width: 720px) {
-  .header__container, .hero__container, .rappresent__container {
-    width: 720px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .header__container, .hero__container, .rappresent__container {
-    width: 1200px;
-  }
-}
-
-.site-nav, .socials {
+.site-nav, .socials, .rappresent__container, .our-community__container, .implement__container, .form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -68,7 +50,7 @@ ul {
           justify-content: center;
 }
 
-.hero__button, .rappresent__button {
+.hero__button, .rappresent__button, .implement__button {
   display: inline-block;
   padding: 15px 47px;
   -webkit-transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -84,7 +66,7 @@ ul {
   border: none;
 }
 
-.hero__button:hover, .rappresent__button:hover, .hero__button:focus, .rappresent__button:focus {
+.hero__button:hover, .rappresent__button:hover, .implement__button:hover, .hero__button:focus, .rappresent__button:focus, .implement__button:focus {
   background-color: #009CC2;
 }
 
@@ -162,6 +144,10 @@ ul {
   padding-top: 230px;
   padding-bottom: 90px;
   max-width: 1600px;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   text-align: center;
   background-image: url("../img/hero/bg-image.jpg");
 }
@@ -217,14 +203,10 @@ ul {
 }
 
 .rappresent__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  max-width: 1092px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .rappresent__title {
@@ -245,5 +227,145 @@ ul {
 .rappresent__text--bold {
   font-weight: 500;
   color: #373737;
+}
+
+.our-community {
+  padding-top: 120px;
+  padding-bottom: 140px;
+  background-color: #F5F6F7;
+  overflow: hidden;
+}
+
+.our-community__container {
+  max-width: 1092px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.our-community__container--flex {
+  max-width: 300px;
+  text-align: center;
+}
+
+.our-community__img {
+  display: inline-block;
+  margin-bottom: 20px;
+  border-radius: 50%;
+}
+
+.our-community__title {
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+  color: #373737;
+}
+
+.implement {
+  padding-top: 120px;
+  padding-bottom: 140px;
+}
+
+.implement__container {
+  max-width: 1092px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.implement__title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.167;
+  text-transform: uppercase;
+  color: #373737;
+}
+
+.implement__text {
+  max-width: 407px;
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.implement__text--bold {
+  font-weight: 500;
+}
+
+.sing-up {
+  padding-top: 200px;
+  padding-bottom: 220px;
+  max-width: 1600px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../img/form/bg-form.jpg");
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 2dppx) {
+  .sing-up {
+    background-image: url("../img/form/bg-form@2x.jpg");
+  }
+}
+
+.sing-up__container {
+  text-align: center;
+}
+
+.sing-up__title {
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.167;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.form__field input {
+  padding: 0 24px;
+  width: 340px;
+  height: 46px;
+  border: none;
+  color: #373737;
+}
+
+.form__field input::-webkit-input-placeholder {
+  color: currentColor;
+  opacity: 0.5;
+}
+
+.form__field input:-ms-input-placeholder {
+  color: currentColor;
+  opacity: 0.5;
+}
+
+.form__field input::-ms-input-placeholder {
+  color: currentColor;
+  opacity: 0.5;
+}
+
+.form__field input::placeholder {
+  color: currentColor;
+  opacity: 0.5;
+}
+
+.form__button {
+  width: 66px;
+  height: 46px;
+  -webkit-transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: #00AFDB;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+
+.form__button:hover, .form__button:focus {
+  background-color: #009CC2;
 }
 /*# sourceMappingURL=main.css.map */
